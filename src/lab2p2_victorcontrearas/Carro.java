@@ -3,8 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package lab2p2_victorcontrearas;
-
+/**/
 public class Carro {
+
+    static boolean isEmpty() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 String tipo;
     String color;
@@ -13,9 +17,6 @@ String tipo;
     int x, y;
     int id;
 
-    Carro(String tipo, String color, double saldo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
     public String getTipo() {
         return tipo;
@@ -73,14 +74,10 @@ String tipo;
         this.id = id;
     }
 
-    public Carro(String tipo, String color, double saldo, boolean pagado, int x, int y, int id) {
+    public Carro(String tipo, String color, double saldo) {
         this.tipo = tipo;
         this.color = color;
         this.saldo = saldo;
-        this.pagado = pagado;
-        this.x = x;
-        this.y = y;
-        this.id = id;
     }
     public static boolean pagar(int saldo){
     if (saldo > 0) {
